@@ -1,0 +1,9 @@
+#!sh
+
+brew install aitorvs/repo/elgato
+git clone https://github.com/antonfisher/go-media-devices-state.git
+cp camera.go ./go-media-devices-state
+cd go-media-devices-state
+go build -o ../bin/camera camera.go
+cp launched.keylight.plist ~/Library/LaunchAgents/launched.keylight.plist
+launchctl load -w ~/Library/LaunchAgents/launched.keylight.plist
