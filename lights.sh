@@ -1,8 +1,8 @@
 #!/bin/bash
 
-camera=$(/Users/cpytel/.bin/camera 2>/dev/null)
+camera=$(/Users/cpytel/.bin/camera 2>&1 | grep Logi)
 
-if [[ $camera =~ "true" ]]; then
+if [[ $camera =~ "YES" ]]; then
   change="on"
 else
   change="off"

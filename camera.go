@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	mediaDevices "github.com/antonfisher/go-media-devices-state"
+	mediaDevices "github.com/antonfisher/go-media-devices-state/pkg/camera"
 )
 
 func main() {
